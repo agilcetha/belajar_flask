@@ -2,3 +2,5 @@ membuat branch baru
  git add .
  git commit -m "menambah file baru"
  git push 
+
+ setelah menambah file lakukan git add -> git commit -> git push
