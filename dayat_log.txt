@@ -1,1 +1,4 @@
 membuat branch baru
+ git add .
+ git commit -m "menambah file baru"
+ git push 
