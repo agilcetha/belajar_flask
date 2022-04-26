@@ -4,7 +4,7 @@ app = Flask (__name__)
 
 @app.route("/")
 def hello():
-    return "halaman opo iki"
+    return "<h1>halaman opo iki</h1>"
 
 if __name__ == "__main__":
     app.run(debug=True) # penulisan debug=True tidak usah spasi
