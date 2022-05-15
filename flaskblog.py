@@ -8,7 +8,7 @@ def hello():
 
 @app.route('/about')
 def hello():
-    return "about, cuy!"
+    return "about,!"
 
-# if __name__ == "__main__":
-    # app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
