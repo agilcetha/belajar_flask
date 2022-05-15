@@ -4,3 +4,5 @@ membuat branch baru
  git push 
 
  setelah menambah file lakukan git add -> git commit -> git push
+
+git --all fetch  mengambil semua perubahan branch dari server
