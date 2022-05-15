@@ -5,4 +5,6 @@ membuat branch baru
 
  setelah menambah file lakukan git add -> git commit -> git push
 
-git --all fetch  mengambil semua perubahan branch dari server
+git checkout rahmad_video_1 (local) add -> commit -> push -. merge / pull request di web/ server 
+git checkout rahmad -> git pull 
+git fetch --all  mengambil semua perubahan branch dari server
