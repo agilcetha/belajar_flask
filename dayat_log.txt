@@ -1,0 +1,10 @@
+membuat branch baru
+ git add .
+ git commit -m "menambah file baru"
+ git push 
+
+ setelah menambah file lakukan git add -> git commit -> git push
+
+git checkout rahmad_video_1 (local) add -> commit -> push -. merge / pull request di web/ server 
+git checkout rahmad -> git pull 
+git fetch --all  mengambil semua perubahan branch dari server
