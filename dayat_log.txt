@@ -8,3 +8,5 @@ membuat branch baru
 git checkout rahmad_video_1 (local) add -> commit -> push -. merge / pull request di web/ server 
 git checkout rahmad -> git pull 
 git fetch --all  mengambil semua perubahan branch dari server
+❯ git branch -D rahmad_video_3 nambah 
+git checkout -b rahmad_video_3 rahmad
