@@ -1,2 +1,2 @@
 ## Belajar Rutinan FLASK
-Ini adalah repo untuk belajar rutinan tentang Framework Flask Python
+Ini adalah repo untuk belajar rutinan tentang Flask Python
