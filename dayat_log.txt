@@ -9,4 +9,33 @@ git checkout rahmad_video_1 (local) add -> commit -> push -. merge / pull reques
 git checkout rahmad -> git pull 
 git fetch --all  mengambil semua perubahan branch dari server
 ❯ git branch -D rahmad_video_3 nambah 
-git checkout -b rahmad_video_3 rahmad
+git checkout -b rahmad_video_3 rahmad 
+git push -u origin rahmad_video_5
+
+
+cara untuk menggunakan SQLAlchemy
+1. ketikkan python3 untuk digunakan pada directory python3
+2. from flaskblog(nama file yang menyimpan database dan perintah untuk membuka database)
+   =>from flaskblog import db
+3. berikan perintah => db.create.all() adalah perintah untuk memulai database
+   jika perintah di atas di eksekusi maka akan muncul nama file contoh:side.db
+4. from flaskblog import User, Post => membuat tabel sesuai perintah/script yang ada pada 
+   flaskblog
+5. user_1 = User(username='Ahsan', email='ah@demo.com', password='bebas')
+   perintah untuk mengisi pada tabel User
+6. db.session.add(user_1) => perintah untuk mengeksekusi pada script nomor 5
+7. db.session.commit => konfirmasi untuk memerintahkan langkah nomor 6 
+8. User.query.all()=> menampilkan tabel dan isi yang telah dibuat
+9. User.query.first()=> menampilkan tabel yang pertama kali dibuat
+10. User.query.filter_by(username='Ahsan').all() => menampilkan data username Ahsan
+11. User.query.filter_by(username='Ahsan').first()
+12. user = User.query.filter_by(username='Ahsan').first() => fungsi untuk menampilkan isi tabel 
+    menggunakan nama tabel
+13. user.id =>menampilkan nomor urut dalam tabel
+14. user = User.query.get(1) => menampilkan isi tabel sesuai nomor urut yang diminta
+15. user.posts =>pindah tabel dan menampilkan isi tabel
+16. post_1 = Post(title='Blog', content='First Post Content!', user_id=user.id)
+17. post.user_id
+18. post.author
+19. db.drop_all() => menghapus database
+20. db.create_all() => mengaktifkan tabel
