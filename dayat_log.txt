@@ -38,4 +38,4 @@ cara untuk menggunakan SQLAlchemy
 17. post.user_id
 18. post.author
 19. db.drop_all() => menghapus database
-20. db.create_all() => mengaktifkan tabel
+20. db.create_all() => buat ulang database
