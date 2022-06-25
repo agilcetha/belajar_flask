@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "s",
+            "database": "\\\\wsl$\\Ubuntu-20.04\\home\\idnmedia\\playground\\belajar_flask\\flaskblog\\site.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
