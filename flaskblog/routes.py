@@ -74,14 +74,28 @@ def logout():
 
 
 def save_picture(form_picture):
+    # MEmbuat random string: "8534ba56dae8617e" 
     random_hex = secrets.token_hex(8)
+
+    # Memisah path dan extension file
+    # /tmp/gambar_ahsan.jpg
+    # _ : /tmp/gambar_ahsan
+    # f_ext: .jpg
     _, f_ext = os.path.splitext(form_picture.filename)
+
+    # 8534ba56dae8617e + .jpg
+    # 8534ba56dae8617e.jpg
     picture_fn = random_hex + f_ext
+    # /home/idnmedia/playground/belajar_flask/ => app.root_path
+    # /home/idnmedia/playground/belajar_flask/static/profile_pics =>app.root_path  + static/profile_pics +  8534ba56dae8617e.jpg
+    # /home/idnmedia/playground/belajar_flask/static/profile_pics/8534ba56dae8617e.jpg
     picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
 
+    # ukuran gbr
     output_size = (125,125)
     i = Image.open(form_picture)
     i.thumbnail(output_size)
+
     i.save(picture_path)
 
     return picture_fn
@@ -94,7 +108,7 @@ def account():
     # fungsi update username dan email
     if form.validate_on_submit():
         if form.picture.data: 
-            picture_file = save_picture(form.picture.data)
+            picture_file = save_picture(form.picture.data) # kjasjdf3.jpg
             current_user.image_file = picture_file
         current_user.username = form.username.data
         current_user.email = form.email.data
